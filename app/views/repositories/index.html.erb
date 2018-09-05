@@ -5,7 +5,7 @@
 
     <% @response_array.each do |response| %>
      <%= response["name"] %>
-    <% end %> 
+    <% end %>
   
   <%= form_tag("/repositories/create", method: "post") do %>
     <%= label_tag(:name, "Create a New Repo:") %>
